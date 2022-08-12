@@ -1,0 +1,36 @@
+{
+  "name": "@qognicafinance/react-lightweight-charts",
+  "version": "2.0.0",
+  "description": "A simple react wrapper for the tradingview lightweight charts module by Qognica Finance.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "package.json", "README.md"],
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "npm run prebuild && rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qognica/react-lightweight-charts.git"
+  },
+  "author": "Qognica Finance (https://qognicafinance.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qognica/react-lightweight-charts/issues"
+  },
+  "homepage": "https://github.com/Qognica/react-lightweight-charts#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@types/react": "^18.0.17",
+    "react": "^18.2.0",
+    "rollup": "^2.77.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
