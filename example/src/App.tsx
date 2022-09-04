@@ -17,17 +17,16 @@ function App() {
   ];
 
   const options = {
-    colors: {
-      backgroundColor: 'white',
-      lineColo: '#2962FF',
-      textColor: 'black',
-      areaTopColor: '#2962FF',
-      areaBottomColor: 'rgba(41, 98, 255, 0.28)',
-    },
+    width: 600,
+    height: 300,
   }
 
   return (
-    <Chart options={options} data={initialData} />
+    <Chart options={options} lineSeries={[
+      {
+        data: initialData,
+      }
+    ]} />
   );
 }
 
